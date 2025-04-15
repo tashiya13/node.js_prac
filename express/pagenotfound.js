@@ -1,4 +1,5 @@
 const express = require("express");
+
 const path = require("path");
 
 const public = path.join(__dirname, "public"); 
@@ -22,4 +23,6 @@ app.get('*', (req, res) => {
 });
 
 
-app.listen(2000);
+app.listen(2000 ,() => {
+    console.log("Server is running on http://localhost:2000");
+});

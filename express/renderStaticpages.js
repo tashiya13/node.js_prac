@@ -12,4 +12,10 @@ app.use(express.static(public));
 
 // if there will be any other html name then we will give path in browser
 
-app.listen(2000);
+app.listen(2000, ()=> {
+    console.log("port is running")
+});
+
+
+
+
